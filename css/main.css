@@ -1,0 +1,37 @@
+.grid-12-column{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);            
+    gap: 1rem;
+}
+
+.product-box{             
+    padding: 2rem;            
+    color: rgb(90, 180, 90);
+    border: 1px solid rgb(90, 180, 90);
+    font-family: sans-serif;
+}
+
+/*
+    Mobile
+*/
+.col-sm-12{
+    grid-column: auto / span 12;   
+}
+
+/*
+    Tablet
+*/
+@media (width >= 768px){
+    .col-md-6{
+        grid-column: auto / span 6;
+    }
+}
+
+/*
+    Tablet/Laptop
+*/
+@media (width >= 992px){
+    .col-lg-4{
+        grid-column: auto / span 4;
+    }
+}
