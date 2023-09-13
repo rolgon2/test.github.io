@@ -18,10 +18,16 @@
     grid-column: auto / span 12;   
 }
 
+@media (orientation: landscape){
+    .col-md-6{
+        grid-column: auto / span 6;
+    }
+}
+
 /*
     Tablet
 */
-@media (width >= 768px) and (orientation: landscape){
+@media (width >= 768px) {
     .col-md-6{
         grid-column: auto / span 6;
     }
